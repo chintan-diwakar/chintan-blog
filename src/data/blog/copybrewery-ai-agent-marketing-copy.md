@@ -1,6 +1,6 @@
 ---
 author: Chintan Diwakar
-pubDatetime: 2026-02-01T00:00:00Z
+pubDatetime: 2026-01-31T12:00:00Z
 title: "CopyBrewery: How I Built an AI Agent That Brews Marketing Copy From the Web"
 slug: copybrewery-ai-agent-marketing-copy
 featured: true
