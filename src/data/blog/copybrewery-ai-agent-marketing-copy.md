@@ -1,7 +1,17 @@
-# CopyBrewery: How I Built an AI Agent That Brews Marketing Copy From the Web
-
-*Learn from the best, generate the rest — an open-source tool for marketers, founders, and developers*
-
+---
+author: Chintan Diwakar
+pubDatetime: 2026-02-01T00:00:00Z
+title: "CopyBrewery: How I Built an AI Agent That Brews Marketing Copy From the Web"
+slug: copybrewery-ai-agent-marketing-copy
+featured: true
+draft: false
+tags:
+  - ai
+  - langgraph
+  - python
+  - open-source
+  - marketing
+description: Learn from the best, generate the rest — an open-source tool for marketers, founders, and developers that crawls websites, extracts marketing copy patterns, and generates fresh content.
 ---
 
 Ever stared at a blank page trying to write the perfect headline? Or wondered how companies like Stripe, Notion, or Linear craft such compelling copy?
@@ -10,7 +20,7 @@ I built **CopyBrewery** to solve this problem. It's an AI-powered agent that cra
 
 Let me show you how it works and how you can use it.
 
----
+## Table of contents
 
 ## The Problem: Writer's Block at Scale
 
@@ -24,8 +34,6 @@ Most people solve this by manually browsing competitor websites, copying snippet
 
 **That's slow, tedious, and inconsistent.**
 
----
-
 ## The Solution: CopyBrewery
 
 CopyBrewery automates the entire process:
@@ -36,8 +44,6 @@ CopyBrewery automates the entire process:
 4. **Generate** — Create new copy inspired by the patterns it learned
 
 Think of it as a copywriting research assistant that never sleeps.
-
----
 
 ## How It Works
 
@@ -74,8 +80,6 @@ Think of it as a copywriting research assistant that never sleeps.
 - **FastAPI** — REST API for integrations
 - **Typer** — Clean CLI interface
 
----
-
 ## Use Cases: Who Is This For?
 
 ### 1. Startup Founders
@@ -96,8 +100,6 @@ cbrew generate taglines --source notion --count 10
 ```
 
 **Result:** Instead of starting from scratch, you get AI-generated copy that follows proven patterns from successful companies.
-
----
 
 ### 2. Marketing Teams
 
@@ -120,8 +122,6 @@ cbrew generate cta --source competitor2 --count 15
 
 **Result:** 35 headline and CTA variations in minutes, not hours.
 
----
-
 ### 3. Copywriters & Content Creators
 
 **The Problem:** You're hired to write copy for a client in an industry you don't know well. You need to understand the language and tone quickly.
@@ -143,8 +143,6 @@ cbrew generate descriptions --source industry-leader-1 --count 10
 
 **Result:** You understand the industry's messaging patterns and have a head start on drafts.
 
----
-
 ### 4. Product Managers
 
 **The Problem:** You're writing product specs and need to describe features in a way that resonates with users.
@@ -163,8 +161,6 @@ cbrew generate descriptions --source similar-product --count 5
 ```
 
 **Result:** Feature descriptions that sound polished and user-focused.
-
----
 
 ### 5. Agencies
 
@@ -191,8 +187,6 @@ curl -X POST http://localhost:8000/generate \
 
 **Result:** Scalable copy research and generation across all your clients.
 
----
-
 ### 6. Developers Building AI Tools
 
 **The Problem:** You're building a content generation tool and need a reliable way to gather training data or examples.
@@ -217,15 +211,13 @@ content = generate_content(
 
 **Result:** A modular system you can integrate into your own applications.
 
----
-
 ## Getting Started
 
 ### Installation
 
 ```bash
 # Clone the repo
-git clone https://github.com/ChintanDiwakar/copybrewery.git
+git clone https://github.com/chintan-diwakar/copybrewery.git
 cd copybrewery
 
 # Install
@@ -295,8 +287,6 @@ Generated Taglines:
 5. "Built for businesses that scale"
 ```
 
----
-
 ## Content Types You Can Generate
 
 | Type | What It Creates | Best For |
@@ -306,8 +296,6 @@ Generated Taglines:
 | `taglines` | Short, memorable phrases | Brand messaging |
 | `descriptions` | Product/service descriptions | Feature sections |
 | `cta` | Call-to-action button text | Conversion optimization |
-
----
 
 ## Deployment Options
 
@@ -330,8 +318,6 @@ CopyBrewery can be deployed to:
 - **Fly.io** — Global edge deployment
 - **Render** — Free tier available
 - **AWS/GCP/Azure** — Container services
-
----
 
 ## Best Practices
 
@@ -372,8 +358,6 @@ cbrew generate headlines --source linear --count 20
 
 AI-generated copy is a draft, not a final product. Use it to overcome writer's block, then refine with your brand voice.
 
----
-
 ## Ethical Considerations
 
 CopyBrewery is designed for **inspiration**, not plagiarism:
@@ -382,8 +366,6 @@ CopyBrewery is designed for **inspiration**, not plagiarism:
 - Generated content is original, influenced by what works
 - Always add your unique voice and brand personality
 - Respect robots.txt and crawl responsibly
-
----
 
 ## What's Next?
 
@@ -394,17 +376,13 @@ I'm actively developing CopyBrewery. Planned features include:
 - **Chrome extension** — Analyze any page with one click
 - **Team collaboration** — Share libraries across your organization
 
----
-
 ## Try It Yourself
 
 CopyBrewery is open source and free to use:
 
-**GitHub:** [github.com/ChintanDiwakar/copybrewery](https://github.com/ChintanDiwakar/copybrewery)
+**GitHub:** [github.com/chintan-diwakar/copybrewery](https://github.com/chintan-diwakar/copybrewery)
 
 Star the repo if you find it useful, and feel free to contribute!
-
----
 
 ## Conclusion
 
@@ -417,18 +395,3 @@ Writing marketing copy doesn't have to start from a blank page. With CopyBrewery
 Whether you're a founder, marketer, copywriter, or developer, CopyBrewery gives you a head start on every piece of copy you write.
 
 **Stop staring at blank pages. Start brewing.**
-
----
-
-*If you found this article helpful, follow me for more on AI tools, development, and building in public.*
-
----
-
-**Connect with me:**
-- Twitter: [@ChintanDiwakar1](https://x.com/ChintanDiwakar1)
-- LinkedIn: [chintandiwakar](https://www.linkedin.com/in/chintandiwakar/)
-- Medium: [@chintandiwakar](https://chintandiwakar.medium.com/)
-
----
-
-*CopyBrewery is built with LangGraph, Playwright, and GPT-4. Licensed under MIT.*
